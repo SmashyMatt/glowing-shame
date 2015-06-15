@@ -17,8 +17,8 @@ public class RollDice : MonoBehaviour {
 	}
 
 	public void RollTriggered() {
-		Debug.Log ("flag");
 		Rigidbody diceInstance = (Rigidbody)Instantiate (dice, transform.position, transform.rotation);
+		diceInstance.rotation = Random.rotation;
 		diceInstance.velocity = transform.forward * forceModifier;
 		diceInstance.angularVelocity = transform.right * forceModifier;
 

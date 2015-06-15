@@ -166,8 +166,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 17329879}
-  m_LocalRotation: {x: .700591445, y: 0, z: 0, w: .713562608}
-  m_LocalPosition: {x: -3.83999991, y: 7.4000001, z: -9.14000034}
+  m_LocalRotation: {x: .581116796, y: 0, z: 0, w: .813820243}
+  m_LocalPosition: {x: -3.83999991, y: 7.4000001, z: -11.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1765514527}
@@ -216,7 +216,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 83380094}
   m_LocalRotation: {x: -.49999994, y: -.499999851, z: -.500000238, w: -.500000119}
-  m_LocalPosition: {x: -8.60000038, y: 1.29999995, z: -14.3999996}
+  m_LocalPosition: {x: -8.60000038, y: 1.29999995, z: -11.3000002}
   m_LocalScale: {x: 1, y: 1, z: 1.57723618}
   m_Children: []
   m_Father: {fileID: 0}
@@ -243,8 +243,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 182836564}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.22000027, y: 4.01000023, z: -14.0600004}
+  m_LocalRotation: {x: .0230183825, y: .365134299, z: .00903133675, w: .930626512}
+  m_LocalPosition: {x: -8.86999989, y: 3.98000002, z: -13.3800001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -389,7 +389,87 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+  m_RootOrder: 10
+--- !u!1 &373732760
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 373732762}
+  - 114: {fileID: 373732761}
+  m_Layer: 0
+  m_Name: CompyDiceGenerator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &373732761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 373732760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bd48816dce0dd7438274b0740c31fea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dice: {fileID: 5459618, guid: c7b3343ffc2d11048bf7da688164244c, type: 2}
+  forceModifier: 23.2600002
+--- !u!4 &373732762
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 373732760}
+  m_LocalRotation: {x: .0102792261, y: .909217656, z: .0224888567, w: .415586203}
+  m_LocalPosition: {x: -15.8999996, y: 3.20000005, z: 2.29999995}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
   m_RootOrder: 9
+--- !u!1 &586418958
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 586418960}
+  - 114: {fileID: 586418959}
+  m_Layer: 0
+  m_Name: GameController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &586418959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 586418958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b2e7c439d9bd4b90a9176cfb6d20d5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &586418960
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 586418958}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.82273483, y: 4.74549055, z: -12.9221563}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
 --- !u!1 &705838372
 GameObject:
   m_ObjectHideFlags: 0
@@ -632,6 +712,28 @@ MonoBehaviour:
           m_StringArgument: asdf
           m_BoolArgument: 0
         m_CallState: 1
+      - m_Target: {fileID: 373732761}
+        m_MethodName: RollTriggered
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
+      - m_Target: {fileID: 586418959}
+        m_MethodName: PlayerRolled
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &971378473
@@ -777,7 +879,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1368620593}
   m_LocalRotation: {x: -.707106829, y: -.707106709, z: -1.15202326e-07, w: -1.15202312e-07}
-  m_LocalPosition: {x: -12.75, y: 1.25999999, z: -8.52000046}
+  m_LocalPosition: {x: -11.8000002, y: 1.25999999, z: -8.52000046}
   m_LocalScale: {x: 1, y: 1, z: 1.57723618}
   m_Children: []
   m_Father: {fileID: 0}
@@ -885,7 +987,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1996504829}
   m_LocalRotation: {x: -.500000119, y: -.5, z: .5, w: .49999994}
-  m_LocalPosition: {x: -8.55000019, y: 1.25999999, z: -4.05999994}
+  m_LocalPosition: {x: -8.55000019, y: 1.25999999, z: -4.88999987}
   m_LocalScale: {x: 1, y: 1, z: 1.57723618}
   m_Children: []
   m_Father: {fileID: 0}
